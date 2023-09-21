@@ -1,7 +1,7 @@
 from dataclasses import dataclass, fields
 
 
-@dataclass
+@dataclass(repr=True, slots=True)
 class Point2D:
     _x: int
     _y: int
